@@ -11,5 +11,7 @@ using (HttpClient client = new HttpClient())
     // a quantidade de musicas ou qual tamanho desse recurso que estamos recebendo
     // e nos queremos garantir que vamos conseguir receber. todos esses recursos
     // Se nao utilizar o Async ele vai receber uma parte, e ja vai passar para a proxima instrucao
-    string resposta = client.GetStringAsync
+    string resposta = await client.GetStringAsync("https://guilhermeonrails.github.io/api-csharp-songs/songs.json");
+    // o uso do async e await aqui, e o seguinte ele fala espera essa tarefa ser concluia e ai sim voce pega o resultado da tarefa
+    Console.WriteLine(resposta);
 }
