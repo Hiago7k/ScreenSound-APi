@@ -10,5 +10,6 @@ using (HttpClient client = new HttpClient())
     // utilizamos o get, para pegar string e o Async e por que nao sabemos
     // a quantidade de musicas ou qual tamanho desse recurso que estamos recebendo
     // e nos queremos garantir que vamos conseguir receber. todos esses recursos
+    // Se nao utilizar o Async ele vai receber uma parte, e ja vai passar para a proxima instrucao
     string resposta = client.GetStringAsync
 }
