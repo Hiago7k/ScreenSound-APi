@@ -2,7 +2,7 @@
 {
     try
     {
-        string resposta = await client.GetStringAsync("https://guilhermeonrils.github.io/api-csharp-songs/songs.json");
+        string resposta = await client.GetStringAsync("https://guilhermeonrails.github.io/api-csharp-songs/songs.json");
         Console.WriteLine(resposta);
     }
     catch (Exception ex)
