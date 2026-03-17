@@ -1,4 +1,5 @@
 ﻿using ScreenSound_APi.Modelos;
+using System.Text.Json;
 
 using (HttpClient client = new HttpClient()) 
 {
@@ -7,6 +8,7 @@ using (HttpClient client = new HttpClient())
     {
         string resposta = await client.GetStringAsync("https://guilhermeonrails.github.io/api-csharp-songs/songs.json");
         Console.WriteLine(resposta);
+        var musicas = JsonSerializer.Deserialize<List<Musica>>(resposta);
     }
     catch (Exception ex)
     {
