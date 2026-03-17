@@ -1,5 +1,8 @@
-﻿using (HttpClient client = new HttpClient()) 
+﻿using ScreenSound_APi.Modelos;
+
+using (HttpClient client = new HttpClient()) 
 {
+    
     try
     {
         string resposta = await client.GetStringAsync("https://guilhermeonrails.github.io/api-csharp-songs/songs.json");
