@@ -12,4 +12,9 @@ internal class LinqFilter
             Console.WriteLine($"- {genero}");
         }
     }
+
+    public static void FiltrarArtistasPorGeneroMusical(List<Musica> musicas, string genero) 
+    {
+
+    }
 }
