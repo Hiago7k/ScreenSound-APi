@@ -23,4 +23,9 @@ internal class LinqFilter
             Console.WriteLine($"- {artista}");
         }
     }
+
+    public static void FiltrarMusicasDeUmArtista(List<Musica> musicas, string nomeDoArtista) 
+    {
+
+    }
 }
