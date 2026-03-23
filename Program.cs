@@ -24,6 +24,17 @@ using (HttpClient client = new HttpClient())
         musicasPreferidasDoHiago.AdicionarMusicasFavoritas(musicas[1467]);
 
         musicasPreferidasDoHiago.ExibirMusicasFavoritas();
+        Console.WriteLine();
+
+        var musicasPreferidasDaNath = new MusicasPreferidas("Nath");
+        musicasPreferidasDaNath.AdicionarMusicasFavoritas(musicas[3]);
+        musicasPreferidasDaNath.AdicionarMusicasFavoritas(musicas[23]);
+        musicasPreferidasDaNath.AdicionarMusicasFavoritas(musicas[123]);
+        musicasPreferidasDaNath.AdicionarMusicasFavoritas(musicas[555]);
+        musicasPreferidasDaNath.AdicionarMusicasFavoritas(musicas[1000]);
+
+        musicasPreferidasDaNath.ExibirMusicasFavoritas();
+
     }
     catch (Exception ex)
     {
