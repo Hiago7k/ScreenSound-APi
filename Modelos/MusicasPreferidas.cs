@@ -15,4 +15,13 @@ internal class MusicasPreferidas
     {
         ListaDeMusicasFavoritas.Add(musica);
     }
+
+    public void ExibirMusicasFavoritas() 
+    {
+        Console.WriteLine($"Essas são as músicas favoritas {Nome}");
+        foreach (var musica in ListaDeMusicasFavoritas) 
+        {
+            Console.WriteLine($"-> {musica.Nome} de {musica.Artista}");
+        }
+    }
 }
