@@ -12,7 +12,7 @@ using (HttpClient client = new HttpClient())
         // LinqOrder.ExibirListaDeArtistasOrdernados(musicas);
         // LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "rock");
         //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "21 Savage");
-        LinqFilter.FiltrarMusicasPorAno(musicas, "2014");
+        LinqFilter.FiltrarMusicasPorAno(musicas, "2017");
     }
     catch (Exception ex)
     {
