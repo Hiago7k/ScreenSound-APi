@@ -10,4 +10,9 @@ internal class MusicasPreferidas
         Nome = nome;
         ListaDeMusicasFavoritas = new List<Musica>();
     }
+
+    public void AdicionarMusicasFavoritas(Musica musica)
+    {
+        ListaDeMusicasFavoritas.Add(musica);
+    }
 }
