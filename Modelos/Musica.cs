@@ -13,7 +13,7 @@ internal class Musica
     [JsonPropertyName("genre")]
     public string? Genero { get; set; }
     [JsonPropertyName("year")]
-    public int Ano { get; set; }
+    public string? Ano { get; set; }
 
     public void ExibirDetalhesDaMusica()
     {
