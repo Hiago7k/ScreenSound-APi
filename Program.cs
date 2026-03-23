@@ -17,13 +17,13 @@ using (HttpClient client = new HttpClient())
 
         var musicasPreferidasDoHiago = new MusicasPreferidas("Hiago");
         
-        musicasPreferidasDoHiago.AdicionarMusicasFavoritas(musicas[1]); 
-        musicasPreferidasDoHiago.AdicionarMusicasFavoritas(musicas[377]); 
-        musicasPreferidasDoHiago.AdicionarMusicasFavoritas(musicas[4]); 
-        musicasPreferidasDoHiago.AdicionarMusicasFavoritas(musicas[6]); 
-        musicasPreferidasDoHiago.AdicionarMusicasFavoritas(musicas[1467]);
+        //musicasPreferidasDoHiago.AdicionarMusicasFavoritas(musicas[1]); 
+        //musicasPreferidasDoHiago.AdicionarMusicasFavoritas(musicas[377]); 
+        //musicasPreferidasDoHiago.AdicionarMusicasFavoritas(musicas[4]); 
+        //musicasPreferidasDoHiago.AdicionarMusicasFavoritas(musicas[6]); 
+        //musicasPreferidasDoHiago.AdicionarMusicasFavoritas(musicas[1467]);
 
-        musicasPreferidasDoHiago.ExibirMusicasFavoritas();
+        //musicasPreferidasDoHiago.ExibirMusicasFavoritas();
 
         var musicasPreferidasDaNath = new MusicasPreferidas("Nath");
         musicasPreferidasDaNath.AdicionarMusicasFavoritas(musicas[3]);
@@ -33,6 +33,8 @@ using (HttpClient client = new HttpClient())
         musicasPreferidasDaNath.AdicionarMusicasFavoritas(musicas[1000]);
 
         musicasPreferidasDaNath.ExibirMusicasFavoritas();
+
+        musicasPreferidasDaNath.GerarArquivoJson();
 
     }
     catch (Exception ex)
