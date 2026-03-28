@@ -35,7 +35,7 @@ using (HttpClient client = new HttpClient())
         musicasPreferidasDaNath.ExibirMusicasFavoritas();
 
         musicasPreferidasDaNath.GerarArquivoJson();
-
+        Console.WriteLine("kilstreak");
     }
     catch (Exception ex)
     {
